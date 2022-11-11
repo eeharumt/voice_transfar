@@ -1,5 +1,8 @@
 # discord_transfer
 
+BOT A transfers audio from the voice channel in which BOT A is joined.
+BOT B plays back the transferred voice.
+
 ## Requirements
 
 Node v16.9.0+
