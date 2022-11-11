@@ -1,0 +1,30 @@
+{
+  "name": "voice_transfer",
+  "version": "0.1.0",
+  "description": "Current Voice channel sound transfer to other channel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=16.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suzukey/discord_transfer"
+  },
+  "author": "eeharumt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suzukey/discord_transfer/issues"
+  },
+  "homepage": "https://github.com/suzukey/discord_transfer#readme",
+  "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "@discordjs/voice": "^0.13.0",
+    "audio-mixer": "^2.1.4",
+    "discord.js": "^14.6.0",
+    "libsodium-wrappers": "^0.7.10",
+    "prism-media": "^1.3.4"
+  }
+}
