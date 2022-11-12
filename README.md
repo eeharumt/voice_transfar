@@ -1,5 +1,8 @@
 # discord_transfer
 
+Discord の特定のボイスチャンネルの音声を別チャンネルに転送する BOT です。  
+BOT A が参加しているボイスチャンネルの音声転送し、BOT B が再生します。
+
 BOT A transfers audio from the voice channel in which BOT A is joined.
 BOT B plays back the transferred voice.
 
@@ -7,9 +10,12 @@ BOT B plays back the transferred voice.
 
 Node v16.9.0+
 
-## Run
+## 起動方法
 
-Create `config/secrets.js` and set tokens
+Discord Developper portal で２つの Bot を作成、
+トークンを `config/secrets` を作成し、それぞれ記載。
+
+`config/secrets.js`
 
 ```
 module.exports = {
@@ -18,20 +24,21 @@ module.exports = {
 }
 ```
 
-Install dependencies & Run bots
+依存関係をインストールし、起動。
 
 ```shell
 $ npm install
 $ npm run start
 ```
 
-To start the bot in the current guild, Send `&trans` command in Discord
+下記コマンドでチャンネルに Bot を参加させます。  
+参加したボットについては Discord 上でドラッグアンドドロップなどで移動させる事ができます。
 
 ```
-# Join by specifying the channel names argument
+# ボイスチャンネル名を指定して転送元と転送先にボットを参加させる
 &trans [FromChannelName] [ToChannelName]
 
-# Leave channels and end the transfer
+# ボットの切断と転送の終了
 &leave
 ```
 
