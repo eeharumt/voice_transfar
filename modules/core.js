@@ -19,13 +19,13 @@ class Transfer {
 
   constructor() {
     this.from = new Client({
-      intents: ["Guilds", "GuildMessages", "MessageContent", "GuildVoiceStates"] // DMでやる場合は "DirectMessages" を入れる
+      intents: ["Guilds", "GuildMessages", "MessageContent", "GuildVoiceStates"]
     })
-    this.from.commands = new Collection()
     this.to = new Client({
-      intents: ["Guilds", "GuildMessages", "MessageContent", "GuildVoiceStates"] // DMでやる場合は "DirectMessages" を入れる
+      intents: ["Guilds", "GuildMessages", "MessageContent", "GuildVoiceStates"]
     })
-    this.to.commands = new Collection()
+    this.from.slash_commands = new Collection()
+    this.to.slash_commands = new Collection()
   }
 
   login = async (from_token, to_token) => {
