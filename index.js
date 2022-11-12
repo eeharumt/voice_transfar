@@ -1,4 +1,5 @@
 const transfer = require("./modules/core")
+
 const secrets = require("./config/secrets")
 const config = require("./config/settings")
 
@@ -29,7 +30,7 @@ clients.from.on("messageCreate", async (message) => {
 
   if (command == "leave") {
     clients.leave(message.guild.id)
-  }./commands/command
+  }
 })
 
 init()
