@@ -3,8 +3,11 @@
 Discord の特定のボイスチャンネルの音声を別チャンネルに転送する BOT です。  
 BOT A が参加しているボイスチャンネルの音声転送し、BOT B が再生します。
 
-BOT A transfers audio from the voice channel in which BOT A is joined.
+BOT A transfers audio from the voice channel in which BOT A is joined.  
 BOT B plays back the transferred voice.
+
+このボットプログラムは下記プロジェクトを参考・改変したものです。  
+https://github.com/suzukey/discord_transfer
 
 ## Requirements
 
@@ -43,5 +46,5 @@ $ npm run start
 ```
 
 <p align="center">
-  <i>voice_transfer is licensed under the terms of the MIT license.</i>
+  <i>voice_transfer is licensed under the terms of the <a href="https://github.com/eeharumt/voice_transfar/blob/main/LICENSE">MIT license.</a></i>
 </p>
